@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sisila | Halaman Utama</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+      integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body class="font-['Poppins'] h-screen bg-gray-100">
+    <!-- Navbar -->
+    <nav class="py-5 bg-green-200 fixed top-0 w-full border-b border-green-700 z-10">
+      <div
+        class="container md:px-12 md:flex md:items-center md:justify-between"
+      >
+        <div class="flex items-center justify-between">
+          <a href="#home" class="flex items-center">
+            <img src="assets/logo.png" alt="Logo" class="h-16 mr-3" />
+            <span class="text-2xl text-green-900 font-bold">Sisila</span>
+          </a>
+          <span
+            class="block mx-2 text-3xl  p-2 rounded-lg md:hidden cursor-pointer hover:bg-green-300" onclick="menu"
+          >
+            <i
+              class="fa-solid fa-bars w-6 h-6 hover:text-white"
+              onclick="menu(this)"
+            ></i>
+          </span>
+        </div>
+        <ul
+          class="p-5 z-10 absolute backdrop:blur w-full left-0 py-4 opacity-0 top-[-400px] transition-all ease-in duration-500 md:p-0 md:flex md:items-center md:space-x-8 md:static md:w-auto md:opacity-100"
+        >
+          <li class="md:my-0">
+            <a
+              href="#home"
+              class="font-semibold duration-500 text-gray-500 hover:text-green-700"
+              >Home</a
+            >
+          </li>
+          <li class="my-6 md:my-0">
+            <a
+              href="#education"
+              class="font-semibold duration-500 text-gray-500 hover:text-green-700"
+              >Education</a
+            >
+          </li>
+          <li class="my-6 md:my-0">
+            <a
+              href="#screening"
+              class="font-semibold duration-500 text-gray-500 hover:text-green-700"
+              >Screening</a
+            >
+          </li>
+          <li class="my-6 md:my-0">
+            <a
+              href="#team"
+              class="font-semibold duration-500 text-gray-500 hover:text-green-700"
+              >Team</a
+            >
+          </li>
+          <li class="my-6 md:my-0">
+            <a
+              href="#contact"
+              class="font-semibold duration-500 text-gray-500 hover:text-green-700"
+              >Contact</a
+            >
+          </li>
+          <a href="#">
+            <button
+              type="button"
+              class="w-full text-white bg-green-700 font-medium rounded-lg px-4 py-3 text-center hover:bg-green-600  hover:drop-shadow-md transition duration-200 ease-in"
+            >
+              Log In
+            </button>
+          </a>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Home -->
+<section id="home" class="py-5 bg-green-200">
+  <div class="container mx-auto mt-10 px-4 flex flex-col-reverse lg:flex-row items-center justify-between">
+    <div class="lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-5 leading-tight">
+        Lorem ipsum dolor sit amet.
+      </h1>
+      <p class="text-green-700 text-base md:text-lg mb-6">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur et quo consequuntur blanditiis reprehenderit excepturi veritatis nemo tempore totam est.
+      </p>
+      <a href="#contact">
+        <button type="button" class="bg-green-700 text-white font-medium rounded-lg px-6 py-3 hover:bg-green-600  transition-all duration-300">
+          Contact Now!
+        </button>
+      </a>
+    </div>
+    <div class="lg:w-1/2 flex justify-center lg:justify-end mb-10 lg:mb-0">
+      <img src="assets/cover-fix.png" alt="cover-photo" class="w-full max-w-md lg:max-w-lg" />
+    </div>
+  </div>
+</section>
+<!-- Home End -->
+
+
+<!-- Education -->
+<section id="education" class="py-5 bg-white">
+  <div class="container mx-auto mt-10 px-4">
+    <h1 class="text-center text-[2.5rem] md:text-5xl font-bold text-green-700 mb-10 uppercase">
+      Education
+    </h1>
+    <div class="flex flex-wrap justify-center -m-4">
+      <div class="p-4 w-full sm:w-1/2 lg:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img
+            src="assets/cover-card.jpeg"
+            alt="card-1"
+            class="lg:h-60 md:h-48 w-full object-cover object-center"
+          />
+          <div class="p-6 hover:bg-green-700 hover:text-white transition duration-300 ease-in">
+            <h2 class="text-base font-medium mb-1">Konten 1</h2>
+            <h1 class="text-2xl font-semibold mb-3">Judul Konten 1</h1>
+            <p class="leading-relaxed mb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quam
+              maiores, temporibus itaque voluptatibus possimus et fuga amet in
+              quos consequatur provident consequuntur id obcaecati?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-4 w-full sm:w-1/2 lg:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img
+            src="assets/cover-card.jpeg"
+            alt="card-2"
+            class="lg:h-60 md:h-48 w-full object-cover object-center"
+          />
+          <div class="p-6 hover:bg-green-700 hover:text-white transition duration-300 ease-in">
+            <h2 class="text-base font-medium mb-1">Konten 2</h2>
+            <h1 class="text-2xl font-semibold mb-3">Judul Konten 2</h1>
+            <p class="leading-relaxed mb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quam
+              maiores, temporibus itaque voluptatibus possimus et fuga amet in
+              quos consequatur provident consequuntur id obcaecati?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-4 w-full sm:w-1/2 lg:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img
+            src="assets/cover-card.jpeg"
+            alt="card-3"
+            class="lg:h-60 md:h-48 w-full object-cover object-center"
+          />
+          <div class="p-6 hover:bg-green-700 hover:text-white transition duration-300 ease-in">
+            <h2 class="text-base font-medium mb-1">Konten 3</h2>
+            <h1 class="text-2xl font-semibold mb-3">Judul Konten 3</h1>
+            <p class="leading-relaxed mb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quam
+              maiores, temporibus itaque voluptatibus possimus et fuga amet in
+              quos consequatur provident consequuntur id obcaecati?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-4 w-full sm:w-1/2 lg:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img
+            src="assets/cover-card.jpeg"
+            alt="card-4"
+            class="lg:h-60 md:h-48 w-full object-cover object-center"
+          />
+          <div class="p-6 hover:bg-green-700 hover:text-white transition duration-300 ease-in">
+            <h2 class="text-base font-medium mb-1">Konten 4</h2>
+            <h1 class="text-2xl font-semibold mb-3">Judul Konten 4</h1>
+            <p class="leading-relaxed mb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quam
+              maiores, temporibus itaque voluptatibus possimus et fuga amet in
+              quos consequatur provident consequuntur id obcaecati?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Education End -->
+
+
+<!-- Section Screening -->
+<section id="screening" class="py-10">
+  <div class="container mx-auto px-4">
+    <h1 class="text-center text-[2.5rem] text-green-700 font-bold font-sans mb-8 uppercase">Screening</h1>
+
+    <!-- Responsive Grid with 4 columns on large screens and 1 on mobile -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Image Card 1 -->
+      <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+        <img src="assets/cover-card.jpeg" alt="Screening 1" class="h-72 sm:h-96 w-full object-cover group-hover:scale-110 transition-transform duration-300">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 group-hover:from-black/80 transition-all"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center px-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <h1 class="text-3xl font-bold text-white">Screening Detail 1</h1>
+          <p class="text-lg italic text-white mb-3">Brief description for screening 1.</p>
+          <button class="rounded-full bg-neutral-900 py-2 px-4 text-sm text-white" onclick="document.getElementById('my_modal_1').showModal()">See All</button>
+        </div>
+      </div>
+
+      <!-- Image Card 2 -->
+      <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+        <img src="assets/cover-card.jpeg" alt="Screening 2" class="h-72 sm:h-96 w-full object-cover group-hover:scale-110 transition-transform duration-300">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 group-hover:from-black/80 transition-all"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center px-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <h1 class="text-3xl font-bold text-white">Screening Detail 2</h1>
+          <p class="text-lg italic text-white mb-3">Brief description for screening 2.</p>
+          <button class="rounded-full bg-neutral-900 py-2 px-4 text-sm text-white" onclick="document.getElementById('my_modal_2').showModal()">See All</button>
+        </div>
+      </div>
+
+      <!-- Image Card 3 -->
+      <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+        <img src="assets/cover-card.jpeg" alt="Screening 3" class="h-72 sm:h-96 w-full object-cover group-hover:scale-110 transition-transform duration-300">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 group-hover:from-black/80 transition-all"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center px-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <h1 class="text-3xl font-bold text-white">Screening Detail 3</h1>
+          <p class="text-lg italic text-white mb-3">Brief description for screening 3.</p>
+          <button class="rounded-full bg-neutral-900 py-2 px-4 text-sm text-white" onclick="document.getElementById('my_modal_3').showModal()">See All</button>
+        </div>
+      </div>
+
+      <!-- Image Card 4 -->
+      <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+        <img src="assets/cover-card.jpeg" alt="Screening 4" class="h-72 sm:h-96 w-full object-cover group-hover:scale-110 transition-transform duration-300">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 group-hover:from-black/80 transition-all"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center px-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <h1 class="text-3xl font-bold text-white">Screening Detail 4</h1>
+          <p class="text-lg italic text-white mb-3">Brief description for screening 4.</p>
+          <button class="rounded-full bg-neutral-900 py-2 px-4 text-sm text-white" onclick="document.getElementById('my_modal_4').showModal()">See All</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modals -->
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box relative rounded-lg animate-modalShow">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <h3 class="text-lg font-bold">Detail 1</h3>
+    <p class="py-4">This is the description for the first item.</p>
+  </div>
+</dialog>
+
+<dialog id="my_modal_2" class="modal">
+  <div class="modal-box relative rounded-lg animate-modalShow">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <h3 class="text-lg font-bold">Detail 2</h3>
+    <p class="py-4">This is the description for the second item.</p>
+  </div>
+</dialog>
+
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box relative rounded-lg animate-modalShow">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <h3 class="text-lg font-bold">Detail 3</h3>
+    <p class="py-4">This is the description for the third item.</p>
+  </div>
+</dialog>
+
+<dialog id="my_modal_4" class="modal">
+  <div class="modal-box relative rounded-lg animate-modalShow">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <h3 class="text-lg font-bold">Detail 4</h3>
+    <p class="py-4">This is the description for the fourth item.</p>
+  </div>
+</dialog>
+
+<!-- CSS Animations -->
+<style>
+  @keyframes modalShow {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animate-modalShow {
+    animation: modalShow 0.3s ease-out;
+  }
+</style>
+
+<!-- Screening End -->
+
+
+<!-- Team -->
+<section id="team" class="py-5">
+  <div class="container mx-auto px-4">
+    <h1 class="text-center text-[2.5rem] text-green-700 font-bold font-sans mb-5 uppercase">Team</h1>
+    
+    <!-- Responsive Grid with 2 columns on medium screens and 3 on large screens -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <!-- Team Card 1 -->
+      <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full h-72 rounded-t-lg" src="assets/IMG_2746.JPG" alt="member-1">
+        <div class="p-4">
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Anggota 1</p>
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ns. Silvia Elki Putri, M.Kep., Sp.Kep.K</h5>
+        </div>
+      </div>
+
+      <!-- Team Card 2 -->
+      <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full h-72 rounded-t-lg" src="assets/WhatsApp Image 2024-10-12 at 21.10.49_a3859b09.jpg" alt="leader">
+        <div class="p-4">
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Ketua Team</p>
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ns. Pratiwi Gasril, M.Kep., Sp.Kep.K</h5>
+        </div>
+      </div>
+
+      <!-- Team Card 3 -->
+      <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full h-72 rounded-t-lg" src="assets/anggota2.jpg" alt="member-2">
+        <div class="p-4">
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Anggota 2</p>
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Assoc. Prof. Harun Mukhtar, S.Kom., M.Kom</h5>
+        </div>
+      </div>
+
+      <!-- Team Card 4 -->
+      <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full h-72 rounded-t-lg" src="assets/mahasiswa.jpg" alt="student-1">
+        <div class="p-4">
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Mahasiswa</p>
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Dhea Dahliana Amanda</h5>
+        </div>
+      </div>
+
+      <!-- Team Card 5 -->
+      <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full h-72 rounded-t-lg" src="assets/mahasiswa2.png" alt="student-2">
+        <div class="p-4">
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Mahasiswa</p>
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Alfaizun Nur Alfidin</h5>
+        </div>
+      </div>
+
+      <!-- Team Card 6 -->
+      <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover w-full h-72 rounded-t-lg" src="assets/ilham.JPG" alt="student-3">
+        <div class="p-4">
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Mahasiswa</p>
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ilham Dwi Pramaditya</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Team End -->
+
+
+    <!-- Contact -->
+    <section id="contact" class="py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-center items-center h-screen">
+          <div class="max-w-md">
+            <h4 class="text-green-900 text-base font-medium leading-6 mb-4 text-center uppercase">Contact Us</h4>
+            <h2 class="text-gray-900 font-manrope text-4xl font-semibold leading-10 mb-9 text-center uppercase">Untuk Informasi Lanjut</h2>
+            <form action="" class="flex flex-col justify-center items-center">
+              <input type="text" class="w-full h-14 shadow-sm text-gray-600 placeholder-text-400 text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none py-2 px-4 mb-8" placeholder="Nama">
+              <input type="email" class="w-full h-14 shadow-sm text-gray-600 placeholder-text-400 text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none py-2 px-4 mb-8" placeholder="Email">
+              <textarea name="" id="text" class="w-full h-48 shadow-sm resize-none text-gray-600 placeholder-text-400 text-lg font-normal leading-7 rounded-2xl border border-gray-200 focus:outline-none px-4 py-4 mb-8" placeholder="Subject"></textarea>
+              <button class="w-full h-12 text-center text-white text-base font-semibold leading-6 rounded-full bg-green-900 shadow transition-all duration-700 hover:bg-green-700">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+                                            
+    <!-- Contact End -->
+
+     <!-- Footer -->
+      
+
+<footer class="bg-green-200">
+  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0">
+            <a href="#home" class="flex items-center">
+                <img src="assets/logo.png" class="h-16 me-3" alt="FlowBite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-green-900">Sisila</span>
+            </a>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Company</h2>
+                <ul class="text-gray-500  font-medium">
+                    <li class="mb-4">
+                        <a href="https://umri.ac.id/" class="hover:underline">UMRI</a>
+                    </li>
+                </ul>
+                <ul class="text-gray-500  font-medium">
+                  <li class="mb-4">
+                      <a href="https://umri.ac.id/fakultas/prodi/P0201" class="hover:underline">Keperawatan UMRI</a>
+                  </li>
+              </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
+                <ul class="text-gray-500 dark:text-gray-500 font-medium">
+                    <li class="mb-4">
+                        <a href="https://www.instagram.com/keperawatanumri?igsh=MTU1YXJwdGFhNHpwOQ==" class="hover:underline ">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://umri.ac.id/fakultas/prodi/P0201" class="hover:underline">Website</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    <hr class="my-6 border-green-900 sm:mx-auto  lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-gray-700 sm:text-center ">© 2024 <a href="https://umri.ac.id/" class="hover:underline">Universitas Muhammadiyah Riau™</a>. All Rights Reserved.
+        </span>
+        
+    </div>
+  </div>
+</footer>
+
+     <!-- Footer End -->
+
+    <!-- Scripting -->
+    <script src="script.js"></script>
+  </body>
+</html>
